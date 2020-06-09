@@ -23,31 +23,40 @@
 \maketitle
 \frontmatter
 
-\include{contents/about_author}
-\include{contents/introduction}
+% author, introduction
+\include{contents/about}
 
+% 目录
 \tableofcontents
-%\listofchanges
 
+% 正文
 \mainmatter
+% 第一章 引言
+\include{contents/引言}
 
-\include{contents/chap01}%引言
-\include{contents/chap02}%编程知识
-\include{contents/chap03}%测序原理
-\include{contents/chap04}%常见标准文件格式
-\include{contents/chap05}%质量控制
-\include{contents/chap06}%常用mapping软件及其核心算法
-\include{contents/chap07}%两大神器——从现在开始让分析流程化
-\include{contents/chap08}%通过Snakemake与Jupyter进行生物信息学分析——实践出真知
-\include{contents/chap09}%机器学习在生物信息学中的应用
-\include{contents/chap10}%核心算法的理解
-\include{contents/chap11}%统计知识
-\include{contents/chap12}%重复几篇顶级论文的核心结论
-\include{contents/others}%杂七杂八的笔记
+% 第二章 Linux基础与编程知识的学习
+\include{contents/Coding}
+%测序原理
+%常见标准文件格式
+%质量控制
+%常用mapping软件及其核心算法
+%两大神器——从现在开始让分析流程化
 
+% 通过Snakemake与Jupyter进行生物信息学分析——实践出真知
+\include{contents/Workflows}
+
+% 机器学习在生物信息学中的应用
+\include{contents/MachineLearning}
+
+
+%核心算法的理解
+%统计知识
+%重复几篇顶级论文的核心结论
+%杂七杂八的笔记
+\include{contents/Kaggle}
 
 %\nocite{*} 
-\bibliography{reference,library}
+\bibliography{bib/reference,bib/library,bib/papers}
 \appendix
 \include{contents/appendix01}
 
